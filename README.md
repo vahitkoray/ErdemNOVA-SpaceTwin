@@ -31,7 +31,7 @@ MOLA ve LOLA raster analizi prototipte henüz uygulanmadı. POWER verileri Düny
 
 GitHub deposu ve ilk web prototipi oluşturuldu, Netlify yayın adresi hazırlandı, NASA POWER bağlantısı entegre edilip düzeltildi ve proje kapsamı ile araştırma kaynakları belirlendi. Bu çalışmalar etkinlik öncesi hazırlıktır. 14–15 Kasım 2026 için aşağıdaki sprintler planlanmıştır.
 
-1. [Sprint 1 · Kapsam ve görev planı](scrum/sprint-1.md)
-2. [Sprint 2 · Veri akışı ve teknik test](scrum/sprint-2.md)
-3. [Sprint 3 · Bilimsel içerik ve kullanıcı deneyimi](scrum/sprint-3.md)
-4. [Sprint 4 · Demo ve teslim hazırlığı](scrum/sprint-4.md)
+1. [Sprint 1 · Kapsam ve görev planı](sprint-reports/sprint-1.md)
+2. [Sprint 2 · Veri akışı ve teknik test](sprint-reports/sprint-2.md)
+3. [Sprint 3 · Bilimsel içerik ve kullanıcı deneyimi](sprint-reports/sprint-3.md)
+4. [Sprint 4 · Demo ve teslim hazırlığı](sprint-reports/sprint-4.md)
