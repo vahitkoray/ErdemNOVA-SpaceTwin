@@ -1,37 +1,49 @@
-# Sprint 4 · Demo ve teslim hazırlığı
+# Sprint 4 · Demo and Submission Preparation
 
-**Etkinlik:** NASA Space Apps Challenge Niğde  
-**Planlanan tarih:** 15 Kasım 2026  
-**Durum (13 Kasım 2026):** Planlandı, henüz başlamadı.
+**Event:** NASA Space Apps Challenge Niğde
 
-## Etkinlik öncesi hazırlık
+**Scheduled date:** 15 November 2026
 
-Netlify yayın adresi etkinlik öncesinde hazırlandı. GitHub deposunda prototip ve NASA POWER bağlantı düzeltmesi kayıtlı.
+**Status as of 13 November 2026:** Planned. The sprint had yet to start.
 
-## Hedefler
+## Sprint Goal
 
-Demo akışını prova etmek ve teslim için gerekli proje malzemelerini gözden geçirmek.
+Rehearse the demo and review the materials required for submission.
 
-## Görevler
+## Planned Tasks
 
-- [ ] Netlify adresinden harita, bölge kartları ve NASA POWER akışını kontrol et.
-- [ ] Takım bilgilerini, veri kaynaklarını ve proje açıklamasını gözden geçir.
-- [ ] Demo provasını yap ve açık kalan işleri kayda geçir.
+- [ ] Check the map, region cards, and NASA POWER data flow on the Netlify site.
+- [ ] Review team information, data sources, and the project description.
+- [ ] Rehearse the demo and document outstanding work.
 
-## Teknik sorunlar
+## Completed Tasks
 
-Olası sorunlar: Demo sırasında internet veya NASA POWER servisine erişim kesintisi.
+**Pre-event Preparation:** Prepared the Netlify deployment URL before the event. The GitHub repository contains the prototype and the NASA POWER connection fix.
 
-## Çözümler
+**Completed during the sprint:** TBD.
 
-Önerilen çözüm: Siteyi prova öncesi aç. Daha önce alınmış gerçek bir yanıt varsa, zamanını belirterek kayıtlı örnek olarak göster.
+## Incomplete Tasks
 
-## Öğrenci katkıları
+**Pending:** All items under Planned Tasks as of 13 November 2026.
 
-Planlanan katkı: Öğrenciler demo anlatımını paylaşacak, kaynakları açıklayacak ve prova geri bildirimlerini kaydedecek. Gerçekleşen katkılar sprint sonunda kaydedilecek.
+## Challenges
 
-## Sprint sonuçları
+**Potential:** Internet access or access to NASA POWER may be interrupted during the demo.
 
-Gerçekleşen sonuçlar sprint sonunda kaydedilecek.
+**Observed during the sprint:** TBD.
 
-**Beklenen çıktı:** Prova kaydı, teslim kontrol listesi ve açık işler.
+## Solutions
+
+**Planned:** Open the site before rehearsal. If a genuine response was previously captured, show it as a saved example and indicate when it was captured.
+
+## Team Contributions
+
+**Planned student contributions:** Share demo presentation duties, explain the sources, and record rehearsal feedback.
+
+**Actual contributions:** TBD. Record them at the end of the sprint.
+
+## Next Steps
+
+**Planned:** Record sprint outcomes at the end of the sprint. Actual outcomes: TBD.
+
+**Expected output:** A rehearsal record, a submission checklist, and a list of outstanding tasks.

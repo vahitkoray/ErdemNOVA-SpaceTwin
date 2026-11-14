@@ -1,37 +1,49 @@
-# Sprint 2 · Veri akışı ve teknik test
+# Sprint 2 · Data Flow and Technical Testing
 
-**Etkinlik:** NASA Space Apps Challenge Niğde  
-**Planlanan tarih:** 14 Kasım 2026  
-**Durum (13 Kasım 2026):** Planlandı, henüz başlamadı.
+**Event:** NASA Space Apps Challenge Niğde
 
-## Etkinlik öncesi hazırlık
+**Scheduled date:** 14 November 2026
 
-NASA POWER bağlantısı prototipe entegre edildi. Bağlantı düzeltmesi Git geçmişinde `068a197` kaydında yer alıyor.
+**Status as of 13 November 2026:** Planned. The sprint had yet to start.
 
-## Hedefler
+## Sprint Goal
 
-Mevcut NASA POWER akışını canlı prototipte sınamak.
+Test the existing NASA POWER data flow in the live prototype.
 
-## Görevler
+## Planned Tasks
 
-- [ ] Farklı Dünya bölgeleri için sıcaklık ve yağış sorgularını çalıştır.
-- [ ] Gösterilen yıl, birimler ve ortalamaları ham JSON ile karşılaştır.
-- [ ] Veri alınamadığında kullanıcıya gösterilen mesajı kontrol et.
+- [ ] Run temperature and precipitation queries for different regions on Earth.
+- [ ] Compare the displayed year, units, and averages with the raw JSON.
+- [ ] Check the message shown when data cannot be retrieved.
 
-## Teknik sorunlar
+## Completed Tasks
 
-Olası sorunlar: Ağ veya CORS hatası, eksik aylık veri ya da beklenmeyen API yanıtı.
+**Pre-event Preparation:** Integrated NASA POWER into the prototype. Git commit `068a197` records the connection fix.
 
-## Çözümler
+**Completed during the sprint:** TBD.
 
-Önerilen çözüm: İstek ve hata mesajını kaydet. Ham JSON bağlantısıyla sorunun kaynağını incele.
+## Incomplete Tasks
 
-## Öğrenci katkıları
+**Pending:** All items under Planned Tasks as of 13 November 2026.
 
-Planlanan katkı: Öğrenciler farklı bölgelerde sorgu çalıştıracak ve bulguları test kaydına işleyecek. Gerçekleşen katkılar sprint sonunda kaydedilecek.
+## Challenges
 
-## Sprint sonuçları
+**Potential:** Possible network or CORS errors, missing monthly data, or unexpected API responses.
 
-Gerçekleşen sonuçlar sprint sonunda kaydedilecek.
+**Observed during the sprint:** TBD.
 
-**Beklenen çıktı:** Bölge bazlı test kaydı ve varsa teknik sorun listesi.
+## Solutions
+
+**Planned:** Record the request and error message. Use the raw JSON link to investigate the cause.
+
+## Team Contributions
+
+**Planned student contributions:** Run queries for different regions and document findings in the test log.
+
+**Actual contributions:** TBD. Record them at the end of the sprint.
+
+## Next Steps
+
+**Planned:** Record sprint outcomes at the end of the sprint. Actual outcomes: TBD.
+
+**Expected output:** A test log by region and a list of any technical issues found.

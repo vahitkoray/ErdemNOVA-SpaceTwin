@@ -1,36 +1,48 @@
-# Sprint 1 · Kapsam ve görev planı
+# Sprint 1 · Scope and Task Planning
 
-**Etkinlik:** NASA Space Apps Challenge Niğde  
-**Planlanan tarih:** 14 Kasım 2026  
-**Durum (13 Kasım 2026):** Planlandı, henüz başlamadı.
+**Event:** NASA Space Apps Challenge Niğde
 
-## Etkinlik öncesi hazırlık
+**Scheduled date:** 14 November 2026
 
-GitHub deposu ve ilk web prototipi oluşturuldu. Projenin challenge kapsamı, araştırma adayları ve kaynakları belirlendi.
+**Status as of 13 November 2026:** Planned. The sprint had yet to start.
 
-## Hedefler
+## Sprint Goal
 
-Mevcut prototipi inceleyerek etkinlik iş listesini ve kabul ölçütlerini belirlemek.
+Review the existing prototype and define the event backlog and acceptance criteria.
 
-## Görevler
+## Planned Tasks
 
-- [ ] Harita, filtreler, bölge kartları ve takım bölümünü gözden geçir.
-- [ ] Görevleri önceliklendir ve sorumluları ekipçe belirle.
+- [ ] Review the map, filters, region cards, and team section.
+- [ ] Prioritize tasks and assign owners as a team.
 
-## Teknik sorunlar
+## Completed Tasks
 
-Olası sorun: Bölge kartlarının kanıt düzeyi ve görev kapsamı ekip içinde farklı yorumlanabilir.
+**Pre-event Preparation:** Created the GitHub repository and initial web prototype. Defined the challenge scope and identified research candidates and sources.
 
-## Çözümler
+**Completed during the sprint:** TBD.
 
-Önerilen çözüm: Bilinen analoglar ile ön araştırma adayları için ayrı kabul ölçütleri yaz.
+## Incomplete Tasks
 
-## Öğrenci katkıları
+**Pending:** All items under Planned Tasks as of 13 November 2026.
 
-Planlanan katkı: Öğrenciler bölge kartlarını inceleyecek, araştırma soruları önerecek ve görev paylaşımına katılacak. Gerçekleşen katkılar sprint sonunda kaydedilecek.
+## Challenges
 
-## Sprint sonuçları
+**Potential:** The team may interpret the evidence in the region cards and the scope of the tasks differently.
 
-Gerçekleşen sonuçlar sprint sonunda kaydedilecek.
+**Observed during the sprint:** TBD.
 
-**Beklenen çıktı:** Öncelikli görev listesi ve ekipçe belirlenen kabul ölçütleri.
+## Solutions
+
+**Planned:** Define separate acceptance criteria for known analogs and preliminary research candidates.
+
+## Team Contributions
+
+**Planned student contributions:** Review region cards, propose research questions, and help assign tasks.
+
+**Actual contributions:** TBD. Record them at the end of the sprint.
+
+## Next Steps
+
+**Planned:** Record sprint outcomes at the end of the sprint. Actual outcomes: TBD.
+
+**Expected output:** A prioritized backlog and acceptance criteria agreed on by the team.

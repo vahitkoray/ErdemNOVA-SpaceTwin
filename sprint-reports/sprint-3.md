@@ -1,37 +1,49 @@
-# Sprint 3 · Bilimsel içerik ve kullanıcı deneyimi
+# Sprint 3 · Scientific Content and User Experience
 
-**Etkinlik:** NASA Space Apps Challenge Niğde  
-**Planlanan tarih:** 15 Kasım 2026  
-**Durum (13 Kasım 2026):** Planlandı, henüz başlamadı.
+**Event:** NASA Space Apps Challenge Niğde
 
-## Etkinlik öncesi hazırlık
+**Scheduled date:** 15 November 2026
 
-Mevcut prototipte bilinen analoglar ve Türkiye araştırma adayları etiketlendi. MOLA ve LOLA araştırma kaynakları olarak tanımlandı.
+**Status as of 13 November 2026:** Planned. The sprint had yet to start.
 
-## Hedefler
+## Sprint Goal
 
-Aday bölgelerin gerekçelerini, kaynaklarını ve prototipin veri sınırlarını gözden geçirmek.
+Review the rationale and sources for candidate regions and the prototype's data limitations.
 
-## Görevler
+## Planned Tasks
 
-- [ ] Bölge kartlarındaki bilimsel gerekçeleri kaynaklarıyla karşılaştır.
-- [ ] Harita, filtreler ve kart etkileşimlerini mobil ve masaüstünde dene.
-- [ ] Dünya meteorolojisi ile Ay ve Mars topoğrafyası arasındaki veri farkını demo metninde açıkla.
+- [ ] Check the scientific rationale in the region cards against the cited sources.
+- [ ] Test the map, filters, and card interactions on mobile and desktop.
+- [ ] Explain the difference between Earth meteorological data and lunar and Martian topographic data in the demo script.
 
-## Teknik sorunlar
+## Completed Tasks
 
-Olası sorun: Bir aday bölgenin etiketinin veya meteoroloji verisinin benzerlik kanıtı olarak yorumlanması.
+**Pre-event Preparation:** Labeled known analogs and research candidates in Türkiye in the prototype. Identified MOLA and LOLA as research sources.
 
-## Çözümler
+**Completed during the sprint:** TBD.
 
-Önerilen çözüm: Aday statüsünü, veri kaynağını ve araştırma sınırlarını ilgili ekranlarda kontrol et.
+## Incomplete Tasks
 
-## Öğrenci katkıları
+**Pending:** All items under Planned Tasks as of 13 November 2026.
 
-Planlanan katkı: Öğrenciler kaynakları okuyacak, bölge açıklamalarını gözden geçirecek ve kullanım sorunlarını bildirecek. Gerçekleşen katkılar sprint sonunda kaydedilecek.
+## Challenges
 
-## Sprint sonuçları
+**Potential:** Users may interpret a candidate region's label or meteorological data as evidence of similarity.
 
-Gerçekleşen sonuçlar sprint sonunda kaydedilecek.
+**Observed during the sprint:** TBD.
 
-**Beklenen çıktı:** Kaynak kontrol notları ve önceliklendirilmiş iyileştirme listesi.
+## Solutions
+
+**Planned:** Check how the relevant screens present candidate status, data sources, and research limitations.
+
+## Team Contributions
+
+**Planned student contributions:** Read the sources, review region descriptions, and report usability issues.
+
+**Actual contributions:** TBD. Record them at the end of the sprint.
+
+## Next Steps
+
+**Planned:** Record sprint outcomes at the end of the sprint. Actual outcomes: TBD.
+
+**Expected output:** Source verification notes and a prioritized list of improvements.
