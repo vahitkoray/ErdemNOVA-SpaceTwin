@@ -1,50 +1,33 @@
-# Sprint 2 · Data Flow and Technical Testing
+# Sprint 2 – Solution Development and Prototype Review
 
-**Event:** NASA Space Apps Challenge Niğde
-**Scrum Master:** Zeynep Su DOĞAÇ
+- **Project:** ErdemNOVA – SpaceTwin
+- **Event:** NASA Space Apps Challenge Niğde 2026
+- **Date:** November 14, 2026
+- **Scrum Master:** Zeynep Su DOĞAÇ
 
-**Scheduled date:** 14 November 2026
+## Objective
 
-**Status as of 13 November 2026:** Planned. The sprint had yet to start.
+Review the existing SpaceTwin prototype and verify the live NASA POWER data flow.
 
-## Sprint Goal
+## Team Participation
 
-Test the existing NASA POWER data flow in the live prototype.
+Göktürkhan YOZBATIRAN, Zeynep Su DOĞAÇ, Mehmet Berat AVLANMAZ, and Yusuf AKDEMİR all participated in online team collaboration on November 14, 2026, using Zoom and WhatsApp.
 
-## Planned Tasks
+## Activities and Evidence
 
-- [ ] Run temperature and precipitation queries for different regions on Earth.
-- [ ] Compare the displayed year, units, and averages with the raw JSON.
-- [ ] Check the message shown when data cannot be retrieved.
+- **Pre-event preparation:** The prototype already included a web interface with a schematic interactive map and information on terrestrial analog candidates, including exploratory locations in Türkiye. The GitHub source repository and technical documentation were already available.
+- **Pre-event testing:** The NASA POWER integration for 2-meter air temperature (T2M) and precipitation (PRECTOTCORR) was tested before the event. Git commit `068a197` records the connection fix.
+- **Confirmed on the event day:** All four students collaborated online. Specific event-day code changes and tests have yet to be documented.
 
-## Completed Tasks
+## Deliverables and Status
 
-**Pre-event Preparation:** Integrated NASA POWER into the prototype. Git commit `068a197` records the connection fix.
+- **Available before the event:** Web prototype, NASA POWER integration, GitHub source repository, and technical documentation.
+- **Planned sprint outputs:** A regional test log and a list of any technical issues found. Event-day results have yet to be documented.
 
-**Completed during the sprint:** TBD.
+## Limitations
 
-## Incomplete Tasks
-
-**Pending:** All items under Planned Tasks as of 13 November 2026.
-
-## Challenges
-
-**Potential:** Possible network or CORS errors, missing monthly data, or unexpected API responses.
-
-**Observed during the sprint:** TBD.
-
-## Solutions
-
-**Planned:** Record the request and error message. Use the raw JSON link to investigate the cause.
-
-## Team Contributions
-
-**Planned student contributions:** Run queries for different regions and document findings in the test log.
-
-**Actual contributions:** TBD. Record them at the end of the sprint.
+NASA POWER provides Earth meteorological data. Mars MOLA and lunar LOLA are research references, and their datasets remain outside the prototype’s data integration. Potential testing issues include network or CORS errors, missing monthly data, and unexpected API responses.
 
 ## Next Steps
 
-**Planned:** Record sprint outcomes at the end of the sprint. Actual outcomes: TBD.
-
-**Expected output:** A test log by region and a list of any technical issues found.
+Run temperature and precipitation queries for different Earth regions. Compare the displayed year, units, and averages with the raw JSON, and check the message shown when data cannot be retrieved. Log results by region and capture the request and error message for any failure. Use the raw JSON link to investigate discrepancies.

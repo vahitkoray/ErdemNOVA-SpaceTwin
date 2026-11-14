@@ -1,49 +1,34 @@
-# Sprint 1 · Scope and Task Planning
+# Sprint 1 – Problem Analysis and Team Coordination
 
-**Event:** NASA Space Apps Challenge Niğde
-**Scrum Master:** Zeynep Su DOĞAÇ
+- **Project:** ErdemNOVA – SpaceTwin
+- **Event:** NASA Space Apps Challenge Niğde 2026
+- **Date:** November 14, 2026
+- **Scrum Master:** Zeynep Su DOĞAÇ
 
-**Scheduled date:** 14 November 2026
+## Objective
 
-**Status as of 13 November 2026:** Planned. The sprint had yet to start.
+The NASA challenge, “Identify Earth Locations that Analog the Permanent Moon Base Locations and Mars,” asks teams to identify places on Earth with characteristics relevant to a permanent lunar base or to Mars. SpaceTwin’s established objective is to explore terrestrial analog candidates through a web interface using accessible Earth observation data.
 
-## Sprint Goal
+The sprint focused on reviewing the existing prototype and defining the event backlog and acceptance criteria.
 
-Review the existing prototype and define the event backlog and acceptance criteria.
+## Team Participation
 
-## Planned Tasks
+Göktürkhan YOZBATIRAN, Zeynep Su DOĞAÇ, Mehmet Berat AVLANMAZ, and Yusuf AKDEMİR all participated in online team collaboration on November 14, 2026, using Zoom and WhatsApp.
 
-- [ ] Review the map, filters, region cards, and team section.
-- [ ] Prioritize tasks and assign owners as a team.
+## Activities and Evidence
 
-## Completed Tasks
+- **Pre-event preparation:** The team created the GitHub repository and initial web prototype, defined the challenge scope, and identified research candidates and sources.
+- **Confirmed on the event day:** All four students coordinated online. Detailed problem analysis results are awaiting Scrum Master confirmation.
 
-**Pre-event Preparation:** Created the GitHub repository and initial web prototype. Defined the challenge scope and identified research candidates and sources.
+## Deliverables and Status
 
-**Completed during the sprint:** TBD.
+- **Available before the event:** GitHub repository and initial web prototype.
+- **Planned sprint outputs:** A prioritized backlog and team-agreed acceptance criteria. Completion is awaiting Scrum Master confirmation.
 
-## Incomplete Tasks
+## Limitations
 
-**Pending:** All items under Planned Tasks as of 13 November 2026.
-
-## Challenges
-
-**Potential:** The team may interpret the evidence in the region cards and the scope of the tasks differently.
-
-**Observed during the sprint:** TBD.
-
-## Solutions
-
-**Planned:** Define separate acceptance criteria for known analogs and preliminary research candidates.
-
-## Team Contributions
-
-**Planned student contributions:** Review region cards, propose research questions, and help assign tasks.
-
-**Actual contributions:** TBD. Record them at the end of the sprint.
+The available record confirms online coordination. Individual assignments, meeting decisions, and completion of the problem analysis remain unverified.
 
 ## Next Steps
 
-**Planned:** Record sprint outcomes at the end of the sprint. Actual outcomes: TBD.
-
-**Expected output:** A prioritized backlog and acceptance criteria agreed on by the team.
+Review the map, filters, region cards, and team section. Ask the Scrum Master to confirm the analysis findings, backlog priorities, and any task assignments. Define separate acceptance criteria for known analogs and preliminary research candidates.
