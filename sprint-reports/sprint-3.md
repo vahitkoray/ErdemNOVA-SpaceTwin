@@ -1,6 +1,7 @@
 # Sprint 3 · Scientific Content and User Experience
 
 **Event:** NASA Space Apps Challenge Niğde
+**Scrum Master:** Zeynep Su DOĞAÇ
 
 **Scheduled date:** 15 November 2026
 

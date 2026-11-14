@@ -1,6 +1,7 @@
 # Sprint 4 · Demo and Submission Preparation
 
 **Event:** NASA Space Apps Challenge Niğde
+**Scrum Master:** Zeynep Su DOĞAÇ
 
 **Scheduled date:** 15 November 2026
 

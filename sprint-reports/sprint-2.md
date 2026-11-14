@@ -1,6 +1,7 @@
 # Sprint 2 · Data Flow and Technical Testing
 
 **Event:** NASA Space Apps Challenge Niğde
+**Scrum Master:** Zeynep Su DOĞAÇ
 
 **Scheduled date:** 14 November 2026
 

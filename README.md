@@ -10,6 +10,7 @@ NASA Space Apps Challenge Niğde için geliştirilen SpaceTwin, Dünya üzerinde
 
 - Göktürkhan YOZBATIRAN — 10/C
 - Zeynep Su DOĞAÇ — 10/C
+- Scrum Master: Zeynep Su DOĞAÇ
 - Mehmet Berat AVLANMAZ — 10/A Anadolu
 - Yusuf AKDEMİR — 10/C
 
