@@ -40,4 +40,4 @@ Confirm Sprint 1 findings and acceptance criteria with the Scrum Master. For Spr
 
 - [GitHub repository](https://github.com/vahitkoray/ErdemNOVA-SpaceTwin)
 - [Live prototype on Netlify](https://erdemnova-spacetwin.netlify.app/)
-- [Project video on YouTube](https://youtu.be/lTGv01v73HY)
+- [Seven-slide jury presentation (English PDF)](https://github.com/vahitkoray/ErdemNOVA-SpaceTwin/blob/main/docs/presentation/ErdemNOVA-SpaceTwin-Jury-Presentation.pdf)
