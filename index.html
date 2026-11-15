@@ -23,6 +23,9 @@ main [id].section{scroll-margin-top:90px}
 :focus-visible{outline:2px solid #8ff3f4;outline-offset:3px}
 @media(max-width:850px){header{position:static;flex-wrap:wrap;gap:6px 24px}nav{display:flex;flex-wrap:wrap;gap:0 16px}nav a{display:inline-flex;align-items:center;min-height:44px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.map-leaders{opacity:.55;pointer-events:none}
+.map-site{cursor:pointer}
+.map-site text{fill:#f5fbff;font-size:var(--map-label-size,12px);paint-order:stroke;stroke:#071322;stroke-width:2px;vector-effect:non-scaling-stroke}
 </style></head><body><header><div class="brand"><span class="orbit">◉</span><div><strong>Erdem<span>NOVA</span></strong><small>SpaceTwin · Planetary Analog Explorer</small></div></div><nav aria-label="Main navigation"><a href="#explore">Explore</a><a href="#compare">Compare</a><a href="#sources">Sources</a><a href="#team">Team</a></nav></header><main><section class="hero"><div class="eyebrow">INDEPENDENT STUDENT RESEARCH PROTOTYPE · GAZİANTEP</div><h1>One Earth.<br><em>Two worlds.</em><br>New questions.</h1><p>Explore sites on Earth that can inform Moon and Mars research, with links to the underlying scientific data.</p><div class="nasa-intro"><h2>Powered by Real NASA Data</h2><p>More than a visual simulation. SpaceTwin retrieves authentic historical environmental datasets through live requests to NASA's POWER API.</p></div><div class="actions"><a class="btn" href="#explore">Explore sites ↗</a><a class="ghost" href="#sources">Scientific method</a></div><div class="notice">SpaceTwin is an independent research prototype. Site comparisons are qualitative.</div></section><section class="stats"><div><b>07</b><span>Research sites</span></div><div><b>04</b><span>Research candidates in Türkiye</span></div><div><b>02</b><span>Research targets: Moon and Mars</span></div><div><b>01</b><span>Data provider: NASA POWER</span></div></section><section id="explore" class="section"><div class="sectionhead"><div><div class="eyebrow">EXPLORE THE EARTH</div><h2>Explore analog sites</h2><p>Select a map marker or a site card to explore a location.</p></div><div class="filters"><button class="selected" aria-pressed="true" data-filter="all">All sites</button><button aria-pressed="false" data-filter="known">Known analogs</button><button aria-pressed="false" data-filter="turkey">Explore Türkiye</button></div></div><div class="workspace"><div class="mapwrap"><svg id="map" viewBox="0 0 900 450" role="img" aria-label="Schematic world map of research sites. Use the site cards to select a site with the keyboard."><defs><linearGradient id="sea" x2="0" y2="1"><stop stop-color="#10294b"/><stop offset="1" stop-color="#071322"/></linearGradient></defs><rect width="900" height="450" fill="url(#sea)"/><g stroke="#2a5577" stroke-width=".7" opacity=".5"><path d="M0 75H900M0 150H900M0 225H900M0 300H900M0 375H900M150 0V450M300 0V450M450 0V450M600 0V450M750 0V450"/></g><g fill="#24485a" stroke="#417c83" stroke-width="1.5" opacity=".9"><path d="M52 105L122 52 204 65 241 98 219 142 180 156 160 205 115 192 91 151 56 145Z"/><path d="M170 220L222 199 250 235 242 296 213 363 189 400 174 331 157 280Z"/><path d="M362 107L410 82 442 107 466 95 521 109 545 151 508 179 479 205 467 253 430 280 402 230 376 192Z"/><path d="M452 93L507 62 594 70 650 55 720 87 799 101 842 154 811 190 749 176 694 218 650 194 609 227 553 183 515 147Z"/><path d="M736 284L788 273 826 309 811 348 760 353 723 324Z"/></g><g id="markers"></g></svg><div class="mapkey">● Known analog &nbsp; <span>●</span> Research candidate in Türkiye</div><p class="mapnote">Educational schematic map. Locations are shown for exploration and are not scientifically validated as equivalent to Moon or Mars environments.</p></div><div class="detail" id="detail" aria-live="polite"></div></div><div class="cards" id="cards"></div></section><section id="compare" class="section compare"><div class="eyebrow">COMPARE WORLDS</div><h2>Explore NASA climate data</h2><p>Explore monthly air temperature, monthly mean daily precipitation, and annual summaries for the selected site on Earth.</p><div class="comparegrid"><div class="panel"><label for="world">Research target</label><select id="world"><option value="Mars">Mars</option><option value="Moon">Moon</option></select><label for="region">Site on Earth</label><select id="region"></select><button class="btn" id="loadPower">Load NASA POWER data</button><p class="hint">Changing the site loads its data. Use the button to request the data again. An internet connection is required.</p></div><div class="panel"><div id="liveStatus" role="status">Choose a site or load NASA POWER data to view the charts.</div><div id="liveData"></div><div id="worldContext"></div></div></div></section><section id="sources" class="section"><div class="eyebrow">TRANSPARENT SCIENCE</div><h2>Data sources and limitations</h2><div class="sourcegrid"><article><h3>NASA POWER</h3><p>Source of the meteorological data shown in SpaceTwin.</p><a href="#transparency">View API request details</a></article><article><h3>NASA MOLA</h3><p>Reference archive for Mars topography. Listed for further research.</p><a href="https://pds-geosciences.wustl.edu/missions/mgs/mola.html" target="_blank" rel="noopener">Data archive ↗</a></article><article><h3>NASA LOLA / LRO</h3><p>Reference archive for lunar topography. Listed for further research.</p><a href="https://lunar.gsfc.nasa.gov/lola/" target="_blank" rel="noopener">Official resource ↗</a></article></div><section class="panel transparency" id="transparency" aria-labelledby="transparency-title">
   <h3 id="transparency-title">Scientific Data Transparency</h3>
   <dl>
@@ -145,7 +148,69 @@ main [id].section{scroll-margin-top:90px}
   }
 ];
 
-(()=>{'use strict';const sites=window.SITES;let selected=sites[0],filter='all';const $=id=>document.getElementById(id);const escape=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));function active(){return sites.filter(s=>filter==='all'||(filter==='known'?s.category==='Known analog':s.category==='Candidate in Türkiye'))}function select(s,loadData=true){selected=s;const chip=s.category==='Candidate in Türkiye'?'Preliminary research candidate':'Known analog site';$('detail').innerHTML=`<small>${escape(s.country)} · ${s.lat.toFixed(2)}°, ${s.lon.toFixed(2)}°</small><h3>${escape(s.name)}</h3><span class="chip">${chip}</span><p>${escape(s.note)}</p><h4>Scientific rationale</h4><p>${escape(s.why)}</p><h4>Evidence status</h4><p>${escape(s.status)}</p><small>Tags: ${s.tags.map(escape).join(', ')}</small>`;render();if(loadData)loadPower(s)}function render(){const arr=active();const focusedCard=$('cards').contains(document.activeElement)?document.activeElement.dataset.id:null;$('cards').innerHTML=arr.map(s=>`<button class="sitecard ${selected.id===s.id?'active':''}" data-id="${s.id}" aria-pressed="${selected.id===s.id}"><b>${escape(s.name)}</b><small>${escape(s.country)} · ${escape(s.category)}</small></button>`).join('');$('cards').querySelectorAll('button').forEach(b=>{b.addEventListener('click',()=>select(sites.find(s=>s.id===b.dataset.id)));if(b.dataset.id===focusedCard)b.focus({preventScroll:true})});const svgNS='http://www.w3.org/2000/svg';$('markers').replaceChildren();arr.forEach(s=>{const g=document.createElementNS(svgNS,'g'),c=document.createElementNS(svgNS,'circle'),t=document.createElementNS(svgNS,'text');let x=(s.lon+180)/360*900,y=(90-s.lat)/180*450;c.setAttribute('cx',x);c.setAttribute('cy',y);c.setAttribute('r',selected.id===s.id?9:6);c.setAttribute('fill',s.category==='Known analog'?'#4fe7ed':'#ffbc65');c.setAttribute('stroke','#06101f');c.setAttribute('stroke-width','2');t.setAttribute('x',x+10);t.setAttribute('y',y-9);t.setAttribute('font-size','12');t.setAttribute('fill','#f5fbff');t.textContent=s.name;g.style.cursor='pointer';g.append(c,t);g.addEventListener('click',()=>select(s));$('markers').append(g)})}document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{filter=b.dataset.filter;document.querySelectorAll('[data-filter]').forEach(x=>{x.classList.toggle('selected',x===b);x.setAttribute('aria-pressed',String(x===b))});const next=active().find(s=>s.id===selected.id)||active()[0];select(next,next.id!==selected.id)}));$('region').innerHTML=sites.map(s=>`<option value="${s.id}">${escape(s.name)}</option>`).join('');$('world').addEventListener('change',context);function context(){$('worldContext').textContent=$('world').value==='Mars'?'Studying Mars requires separate topographic analysis. Conditions on Earth and Mars limit direct comparisons of air temperature.':'Studying the Moon requires separate topographic analysis. The Moon lacks an Earth-like atmosphere and precipitation.'}context();
+(()=>{'use strict';const sites=window.SITES;let selected=sites[0],filter='all';const $=id=>document.getElementById(id);const escape=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));function active(){return sites.filter(s=>filter==='all'||(filter==='known'?s.category==='Known analog':s.category==='Candidate in Türkiye'))}function select(s,loadData=true){selected=s;const chip=s.category==='Candidate in Türkiye'?'Preliminary research candidate':'Known analog site';$('detail').innerHTML=`<small>${escape(s.country)} · ${s.lat.toFixed(2)}°, ${s.lon.toFixed(2)}°</small><h3>${escape(s.name)}</h3><span class="chip">${chip}</span><p>${escape(s.note)}</p><h4>Scientific rationale</h4><p>${escape(s.why)}</p><h4>Evidence status</h4><p>${escape(s.status)}</p><small>Tags: ${s.tags.map(escape).join(', ')}</small>`;render();if(loadData)loadPower(s)}function render(){const arr=active();const focusedCard=$('cards').contains(document.activeElement)?document.activeElement.dataset.id:null;$('cards').innerHTML=arr.map(s=>`<button class="sitecard ${selected.id===s.id?'active':''}" data-id="${s.id}" aria-pressed="${selected.id===s.id}"><b>${escape(s.name)}</b><small>${escape(s.country)} · ${escape(s.category)}</small></button>`).join('');$('cards').querySelectorAll('button').forEach(b=>{b.addEventListener('click',()=>select(sites.find(s=>s.id===b.dataset.id)));if(b.dataset.id===focusedCard)b.focus({preventScroll:true})});renderMap(arr)}document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{filter=b.dataset.filter;document.querySelectorAll('[data-filter]').forEach(x=>{x.classList.toggle('selected',x===b);x.setAttribute('aria-pressed',String(x===b))});const next=active().find(s=>s.id===selected.id)||active()[0];select(next,next.id!==selected.id)}));$('region').innerHTML=sites.map(s=>`<option value="${s.id}">${escape(s.name)}</option>`).join('');$('world').addEventListener('change',context);function context(){$('worldContext').textContent=$('world').value==='Mars'?'Studying Mars requires separate topographic analysis. Conditions on Earth and Mars limit direct comparisons of air temperature.':'Studying the Moon requires separate topographic analysis. The Moon lacks an Earth-like atmosphere and precipitation.'}context();
+
+
+const svgNS = 'http://www.w3.org/2000/svg';
+const map = $('map');
+
+// Label coordinates are in the map's viewBox. Site coordinates still position the dots.
+const mapLabels = {
+  atacama: { x: 303, y: 325 },
+  haughton: { x: 235, y: 40 },
+  death: { x: 170, y: 175 },
+  cappadocia: { x: 475, y: 107, side: 'end' },
+  karapinar: { x: 595, y: 188 },
+  nemrut: { x: 595, y: 83 },
+  salda: { x: 456, y: 246, side: 'end' }
+};
+
+function mapElement(tag, attributes) {
+  const element = document.createElementNS(svgNS, tag);
+  for (const [name, value] of Object.entries(attributes)) element.setAttribute(name, value);
+  return element;
+}
+
+function renderMap(visibleSites) {
+  const markers = $('markers');
+  const leaders = mapElement('g', { class: 'map-leaders', 'aria-hidden': 'true' });
+  markers.replaceChildren(leaders);
+  for (const site of visibleSites) {
+    const x = (site.lon + 180) / 360 * 900;
+    const y = (90 - site.lat) / 180 * 450;
+    const label = mapLabels[site.id] ?? { x: x + 10, y: y - 9 };
+    const side = label.side ?? 'start';
+    const color = site.category === 'Known analog' ? '#4fe7ed' : '#ffbc65';
+    if (mapLabels[site.id]) {
+      leaders.append(mapElement('line', {
+        x1: x, y1: y, x2: label.x + (side === 'end' ? 5 : -5), y2: label.y,
+        stroke: color, 'vector-effect': 'non-scaling-stroke'
+      }));
+    }
+    const group = mapElement('g', { class: 'map-site', 'data-site': site.id });
+    const dot = mapElement('circle', {
+      cx: x, cy: y, r: selected.id === site.id ? 9 : 6,
+      fill: color, stroke: '#06101f', 'stroke-width': 2
+    });
+    const text = mapElement('text', {
+      x: label.x, y: label.y, 'text-anchor': side, 'dominant-baseline': 'central'
+    });
+    text.textContent = site.name;
+    group.append(dot, text);
+    group.addEventListener('click', () => select(site));
+    markers.append(group);
+  }
+}
+
+// Keep the text readable as the entire SVG scales to fit its panel.
+new ResizeObserver(([entry]) => {
+  const width = entry.contentRect.width;
+  if (width <= 0) return;
+  const minimumPixels = 12;
+  const mapUnitsPerPixel = map.viewBox.baseVal.width / width;
+  const labelSize = Math.max(minimumPixels, minimumPixels * mapUnitsPerPixel);
+  map.style.setProperty('--map-label-size', labelSize + 'px');
+}).observe(map);
 
 const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
   'July', 'August', 'September', 'October', 'November', 'December'];
